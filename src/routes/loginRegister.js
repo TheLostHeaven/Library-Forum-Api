@@ -1,4 +1,5 @@
 import express from 'express';
+import loginRegisterController from '../controller/loginRegisterController.js';
 const router = express.Router();
 
 //para mostrar la página de inicio de sesión
