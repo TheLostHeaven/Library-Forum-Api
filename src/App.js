@@ -4,6 +4,19 @@ import cors from "cors";
 
 const app = express();
 
+import loginRegister from './routes/loginRegister.js';
+import startPath from './routes/startPath.js';
+import profilePath  from './routes/profilePath.js';
+import routeuser  from './routes/route.user.js';
+import AdminController  from './routes/adminController.js';
+
+
+app.use('/', loginRegister);
+app.use('/', startPath);
+app.use('/', profilePath);
+app.use('/', routeuser)
+app.use('/', AdminController);
+
 app.use(express.json());
 
 app.use(
