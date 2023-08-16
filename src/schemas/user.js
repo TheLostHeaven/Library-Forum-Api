@@ -3,35 +3,35 @@ import bcrypt from "bcryptjs";
 
 const userSchema = new Schema(
   {
-    firstNames: {
+    firstNames : {
       type: String,
-      required : true,
-      
+      require: true,
     },
-    lastNames: {
-      type:String,
-      required: true,
+
+    nickName : {
+      type: String,
+      require: true,
     },
-    email: {
-      type:String,
+
+    email : {
+      type: String,
       unique: true,
-      required: true,
+      require: true,
     },
-    phone: {
-      type: Number,
-    },
+
     password: {
       type: String,
-      required: true,
+      require: true,
     },
-    enabled: {
-      type: Boolean,
-      default: true,
+
+    role : {
+      ref: "role",
+      type: Schema.Types.ObjectId
     }
   },
   {
     timestamps: true,
-    versionKey: false,
+    versionKey: false
   }
 );
 
