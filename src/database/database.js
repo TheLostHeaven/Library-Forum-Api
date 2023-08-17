@@ -1,8 +1,7 @@
 import mongoose from "mongoose";
-
-// setting environment variables -- database connection link
 import { config } from "dotenv";
 config();
+
 const MONGO_DB_URI = process.env.MONGO_DB_URI
 
 const connectionOptions = {
