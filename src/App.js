@@ -4,18 +4,18 @@ import cors from "cors";
 
 const app = express();
 
-import loginRegister from './routes/loginRegister.js';
-import startPath from './routes/startPath.js';
-import profilePath  from './routes/profilePath.js';
-import routeuser  from './routes/route.user.js';
-import AdminController  from './routes/adminController.js';
+import routerAuth from './routes/router.auth.js';
+import routerAdmin from './routes/router.admin.js';
+import routerProfile  from './routes/router.profile.js';
+import routeUser  from './routes/route.user.js';
+import routerStart from './routes/router.start.js'
 
 
-app.use('/', loginRegister);
-app.use('/', startPath);
-app.use('/', profilePath);
-app.use('/', routeuser)
-app.use('/', AdminController);
+app.use('/api/auth', routerAuth);
+app.use('/api/admin', routerAdmin);
+app.use('/api/profile', routerProfile);
+app.use('/api/user', routeUser)
+app.use('/api/start', routerStart)
 
 app.use(express.json());
 
