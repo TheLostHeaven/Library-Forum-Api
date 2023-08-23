@@ -1,13 +1,10 @@
-import app from "./src/App.js";
-import "./src/database/database.js"
+import app from './src/app.js';
+import "./src/database/database.js";
+import "./src/libs/initialSetup.js";
+import { PORT } from './src/config.js';
 
-import "./src/libs/initialSetup.js"
 
 
-import { config } from "dotenv";
-config();
+app.listen(PORT);
+console.log('Live serve on', + PORT)
 
-const PORT = process.env.PORT || 3000
-
-app.listen(PORT)
-console.log("Server listen on port" + PORT)
