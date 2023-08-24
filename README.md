@@ -5,6 +5,7 @@
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg)
 
 # Estructura de Carpetas 
+![Estructure Back-End](https://github.com/TheLostHeaven/Library-Forum-Api/assets/90277397/41416507-2b5a-45fa-b9b0-8b65a1e72139)
 
 
 ## Descripción
