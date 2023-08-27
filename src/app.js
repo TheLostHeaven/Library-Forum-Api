@@ -6,6 +6,15 @@ const app = express();
 //app.use
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(
+  cors({
+      origin: "http://localhost:4200/",
+      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+      credentials: true,
+      preflightContinue: false,
+      optionsSuccessStatus: 204,
+  })
+);
 
 //Routes
 
@@ -20,18 +29,6 @@ app.use("/api/auth", authRouter);
 app.use("/api/users", usersRouter)
 app.use("/api/publications", publicationsRouter);
 
-
-app.use(express.json());
-
-app.use(
-  cors({
-      origin: "http://localhost:4200/",
-      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-      credentials: true,
-      preflightContinue: false,
-      optionsSuccessStatus: 204,
-  })
-);
 
 
 export default app;
