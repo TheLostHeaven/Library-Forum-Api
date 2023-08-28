@@ -77,8 +77,5 @@ Si tienes alguna pregunta o sugerencia o quieres la documentacion para desarroll
 
 - [@Daniel Molina](https://github.com/TheLostHeaven)
 - [@Victor Torres](https://github.com/Victor050106)
-- [@Dairon Vega](https://github.com/DaironRV)
-- [@Diego Aguirre](https://github.com/DiegoAgui)
-- [@Juan Cardenas](https://github.com/JMCardenass)
 - [@Kevin Serna](https://github.com/KeviinSerna)
 - [@Santiago Beltran](https://github.com/SBenitezUran)
